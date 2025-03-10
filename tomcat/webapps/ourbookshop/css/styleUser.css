@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* === Header === */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* === Search Bar === */
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+/* Search Button */
+.submit-btn {
+    width: 50px;
+    height: 42px;
+    background: white;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.submit-btn:hover {
+    background: #f0f0f0;
+}
+
+.cart-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-user a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: white; /* Same as header */
+    border-radius: 5px;
+}
+
+.cart-user a:hover {
+    background-color: #f0f0f0;
+}
+
+/* === User Profile Container === */
+.user-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Profile Info (Side by Side Layout) === */
+.profile-info {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    row-gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+/* === Bold Titles === */
+label {
+    font-weight: bold;
+}
+
+/* === Order Box === */
+.order-box {
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* === Back to Home Button === */
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home-btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    background: #cc5200;
+}
+
+/* === Logout Button === */
+.logout-btn {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
